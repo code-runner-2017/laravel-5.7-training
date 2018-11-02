@@ -18,26 +18,24 @@ This project contains multiple tags corresponding to the training steps.
 - from xampp control panel, open a shell
 
 - check that you are using at least php 7.1.3:
-
-    
+```    
     php -v
-
+```
 - install laravel (first time only):    
     composer global require laravel/installer
 
 - create a new project
-
-
+```
     laravel new laravel-5.7-training
     cd laravel-5.7-training
     composer install
     composer update
     cp .env.example .env
     php artisan key:generate
+```
 
 - edit apache's `httpd-vhosts.conf` (C:\xampp\apache\conf\extra)    
-    
-    
+```
     <VirtualHost *:80>
      ServerAdmin webmaster@laravelcom
      DocumentRoot D:/Projects/WEBAPPS/laravel-5.7-training/public
@@ -50,12 +48,11 @@ This project contains multiple tags corresponding to the training steps.
        Require all granted 
      </Directory> 
     </VirtualHost> 
-    
+```    
 - add the following line to `C:\Windows\System32\drivers\etc\hosts`:
-
-
+```
     127.0.0.1 laravel-5.7-training.test
-    
+``` 
 - start apache
 
 - open this in your web browser: http://laravel-5.7-training.test/
