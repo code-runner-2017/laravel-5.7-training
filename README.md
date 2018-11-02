@@ -59,4 +59,19 @@ This project contains multiple tags corresponding to the training steps.
 
 - you should see the welcome page
 
+- for xdebug setup (optional, but recommended) download `PHP 7.2 VC15 TS (32 bit)` from 
+    `https://xdebug.org/download.php` and add the following section to the end of the php.ini file:
+```
+    [xdebug]
+    zend_extension=php_xdebug-2.7.0beta1-7.2-vc15.dll
+    xdebug.remote_autostart=on
+    xdebug.remote_enable=on
+    xdebug.remote_host=127.0.0.1
+    xdebug.remote_port=9000
+    xdebug.remote_handler=dbgp
+    xdebug.remote_mode=req
+    xdebug.idekey=default
+```
+
 For the rest of this tutorial check out the files in the `resources/doc` directory.
+

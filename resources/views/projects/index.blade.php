@@ -13,6 +13,6 @@
             <li>{{$project->id}}: {{$project->title}}</li>
         @endforeach
     </ul>
-
+    <a href="projects/create">Add new</a>
 </body>
 </html>
