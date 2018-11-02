@@ -1,18 +1,14 @@
-<!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Projects</title>
-</head>
-<body>
+@extends('projects.layout')
 
+@section('content')
     <h1>Projects:</h1>
     <ul>
         @foreach($projects as $project)
-            <li>{{$project->id}}: {{$project->title}}</li>
+            <li>
+                {{$project->id}}: {{$project->title}}
+                <a href="/projects/{{$project->id}}/edit">edit</a>
+            </li>
         @endforeach
     </ul>
-    <a href="projects/create">Add new</a>
-</body>
-</html>
+    <a href="projects/create" class="btn btn-outline-primary">Add new</a>
+@endsection

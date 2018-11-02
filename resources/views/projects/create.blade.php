@@ -1,27 +1,21 @@
-<!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Projects</title>
-</head>
-<body>
+@extends('projects.layout')
 
+@section('content')
     <h1>Create a new Project:</h1>
 
-    <form action="/projects" method="post">
+    <form action="/projects" method="post" class="form">
         {{ csrf_field() }}
-        <div>
-            <input type="text" name="title" placeholder="project title">
+        <div class="form-group">
+            <label for="projectTitle">Title</label>
+            <input type="text" name="title" placeholder="project title" class="form-control" id="projectTitle">
         </div>
 
-        <div>
-            <input type="text" name="description" placeholder="project description">
+        <div class="form-group">
+            <label for="projectDesc">Description</label>
+            <input type="text" name="description" placeholder="project description" class="form-control" id="projectDesc">
         </div>
         <div>
-            <button type="submit">Create</button>
+            <button type="submit" class="btn btn-outline-primary">Create</button>
         </div>
     </form>
-
-</body>
-</html>
+@endsection
