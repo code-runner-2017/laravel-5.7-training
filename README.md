@@ -1,14 +1,22 @@
 # Requirements
 
-- git bash (https://gitforwindows.org/)
+- composer (http://getcomposer.org)
 - XAMPP https://sourceforge.net/projects/xampp/
   or any other environment that comes with php >= 7.1.3
+- (optional) git bash (https://gitforwindows.org/)
 
 # Setup
 
-- check that you are using at least php 7.1.3
+- from xampp control panel, open a shell
 
-- open bash and run:
+- check that you are using at least php 7.1.3:
+    
+    php -v
+
+- install laravel (first time only):    
+    composer global require laravel/installer
+
+- create a new project
 
     laravel new laravel-5.7-training
     cd laravel-5.7-training
