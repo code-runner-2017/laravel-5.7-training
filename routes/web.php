@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/projects/json', 'ProjectsController@indexJson');
+Route::get('/projects', 'ProjectsController@index');
