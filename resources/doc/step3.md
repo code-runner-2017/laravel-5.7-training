@@ -1,6 +1,10 @@
 # Page to create a project
 
-- add a route for `projects/create`
+- add a route for `projects/create` and `projects/store`
 
-- add a route for `projects/<id>`
+- implemented methods in the controller
+
+- added a new view `projects/create.blade.php`
+
+
 
