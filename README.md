@@ -1,3 +1,11 @@
+# Introduction
+
+This is a tutorial for Laravel 5.7 on Windows.
+This is *not* a beginners tutorial going step by step: the assumption is that you already know
+PHP and how to configure it on Windows.
+
+This project contains multiple tags corresponding to the training steps.
+
 # Requirements
 
 - composer (http://getcomposer.org)
@@ -49,3 +57,5 @@
 - open this in your web browser: http://laravel-5.7-training.test/
 
 - you should see the welcome page
+
+For the rest of this tutorial check out the files in the `resources/doc` directory.
